@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Papa from "papaparse";
+import {parse} from "papaparse";
 
 export default function CardListView({
   cards: _unused,
@@ -20,7 +20,7 @@ export default function CardListView({
   // 名簿を読み込む関数
   const refreshMasterData = () => {
     setIsRefreshing(true);
-    Papa.parse(SPREADSHEET_CSV_URL, {
+    parse(SPREADSHEET_CSV_URL, {
       download: true,
       header: true,
       complete: (results) => {
