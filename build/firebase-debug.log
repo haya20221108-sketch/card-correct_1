@@ -1,0 +1,64 @@
+[debug] [2026-03-15T01:26:58.651Z] ----------------------------------------------------------------------
+[debug] [2026-03-15T01:26:58.652Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2026-03-15T01:26:58.652Z] CLI Version:   15.10.0
+[debug] [2026-03-15T01:26:58.652Z] Platform:      darwin
+[debug] [2026-03-15T01:26:58.652Z] Node Version:  v22.19.0
+[debug] [2026-03-15T01:26:58.653Z] Time:          Sun Mar 15 2026 10:26:58 GMT+0900 (日本標準時)
+[debug] [2026-03-15T01:26:58.653Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-03-15T01:26:59.159Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-03-15T01:26:59.159Z] > authorizing via signed-in user (haya20221108@gmail.com)
+[debug] [2026-03-15T01:26:59.159Z] [iam] checking project collect-card for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-03-15T01:26:59.159Z] Checked if tokens are valid: true, expires at: 1773540130125
+[debug] [2026-03-15T01:26:59.160Z] Checked if tokens are valid: true, expires at: 1773540130125
+[debug] [2026-03-15T01:26:59.160Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/collect-card:testIamPermissions [none]
+[debug] [2026-03-15T01:26:59.160Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/collect-card:testIamPermissions  x-goog-user-project=collect-card
+[debug] [2026-03-15T01:26:59.160Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/collect-card:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-03-15T01:26:59.896Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/collect-card:testIamPermissions 200
+[debug] [2026-03-15T01:26:59.896Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/collect-card:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-03-15T01:26:59.896Z] Checked if tokens are valid: true, expires at: 1773540130125
+[debug] [2026-03-15T01:26:59.896Z] Checked if tokens are valid: true, expires at: 1773540130125
+[debug] [2026-03-15T01:26:59.896Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/collect-card [none]
+[debug] [2026-03-15T01:27:00.297Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/collect-card 200
+[debug] [2026-03-15T01:27:00.297Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/collect-card {"projectId":"collect-card","projectNumber":"947892966745","displayName":"collect-card","name":"projects/collect-card","resources":{"hostingSite":"collect-card"},"state":"ACTIVE","etag":"1_87161e7b-909c-44ba-9a88-ca6232e15800"}
+[info] 
+[info] === Deploying to 'collect-card'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2026-03-15T01:27:00.304Z] Checked if tokens are valid: true, expires at: 1773540130125
+[debug] [2026-03-15T01:27:00.304Z] Checked if tokens are valid: true, expires at: 1773540130125
+[debug] [2026-03-15T01:27:00.304Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/collect-card/versions [none]
+[debug] [2026-03-15T01:27:00.304Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/collect-card/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2026-03-15T01:27:01.508Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/collect-card/versions 200
+[debug] [2026-03-15T01:32:31.761Z] ----------------------------------------------------------------------
+[debug] [2026-03-15T01:32:31.772Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2026-03-15T01:32:31.772Z] CLI Version:   15.10.0
+[debug] [2026-03-15T01:32:31.772Z] Platform:      darwin
+[debug] [2026-03-15T01:32:31.772Z] Node Version:  v22.19.0
+[debug] [2026-03-15T01:32:31.773Z] Time:          Sun Mar 15 2026 10:32:31 GMT+0900 (日本標準時)
+[debug] [2026-03-15T01:32:31.773Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-03-15T01:32:32.651Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-03-15T01:32:32.651Z] > authorizing via signed-in user (haya20221108@gmail.com)
+[debug] [2026-03-15T01:32:32.651Z] [iam] checking project collect-card for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-03-15T01:32:32.652Z] Checked if tokens are valid: true, expires at: 1773540130125
+[debug] [2026-03-15T01:32:32.652Z] Checked if tokens are valid: true, expires at: 1773540130125
+[debug] [2026-03-15T01:32:32.652Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/collect-card:testIamPermissions [none]
+[debug] [2026-03-15T01:32:32.652Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/collect-card:testIamPermissions  x-goog-user-project=collect-card
+[debug] [2026-03-15T01:32:32.653Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/collect-card:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-03-15T01:32:32.853Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/collect-card:testIamPermissions 200
+[debug] [2026-03-15T01:32:32.853Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/collect-card:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-03-15T01:32:32.853Z] Checked if tokens are valid: true, expires at: 1773540130125
+[debug] [2026-03-15T01:32:32.853Z] Checked if tokens are valid: true, expires at: 1773540130125
+[debug] [2026-03-15T01:32:32.853Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/collect-card [none]
+[debug] [2026-03-15T01:32:33.295Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/collect-card 200
+[debug] [2026-03-15T01:32:33.295Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/collect-card {"projectId":"collect-card","projectNumber":"947892966745","displayName":"collect-card","name":"projects/collect-card","resources":{"hostingSite":"collect-card"},"state":"ACTIVE","etag":"1_87161e7b-909c-44ba-9a88-ca6232e15800"}
+[info] 
+[info] === Deploying to 'collect-card'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2026-03-15T01:32:33.302Z] Checked if tokens are valid: true, expires at: 1773540130125
+[debug] [2026-03-15T01:32:33.302Z] Checked if tokens are valid: true, expires at: 1773540130125
+[debug] [2026-03-15T01:32:33.302Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/collect-card/versions [none]
+[debug] [2026-03-15T01:32:33.302Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/collect-card/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2026-03-15T01:32:34.552Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/collect-card/versions 200
